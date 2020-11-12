@@ -24,6 +24,11 @@ data = {
 
 cursor.execute(SQL, data)
 
+cursor.execute('SELECT * from table2;')
+
+result = cursor.fetchall()
+print(result)
+
 connection.commit()
 
 connection.close()
